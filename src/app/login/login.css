@@ -1,0 +1,436 @@
+
+.login-page{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    background: url('./canvas.png');
+    overflow: hidden;
+
+}
+.login-main {
+    display: flex;
+    padding: 24px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100%;
+}
+
+.login-header {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    padding: 24px;
+    cursor: pointer;
+}
+.login-content{
+    align-self: end;
+    display: flex;
+    flex: 1.1;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 24px 24px 48px;
+ 
+    max-width: 800px;
+    
+}
+
+.login-form{
+    flex: 0.9;
+    margin-top: 10px;
+    
+}
+form {
+    width: 100%;
+}
+
+.login-content-h3{
+    
+        font-family: "Brandon Text", Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 600;
+        line-height: 1.714rem;
+        color: var(--carousel-text-color);
+        margin-bottom: 8px;
+}
+.login-content-p{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Inter, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--carousel-text-color);
+    margin-bottom: 24px;
+    text-wrap: balance;
+    
+}
+
+
+
+.login-content-href > span {
+    font-size: 0.8rem;
+    border: 1px solid;
+    padding: 8px 24px;
+    border-radius: 12px;
+    background: transparent;
+    font-weight: 500;
+    transition: border-color 0.25s ease 0s, color 0.25s ease 0s;
+}
+.login-content-href > span:hover {
+    color: rgb(83, 51, 237);   
+    border-color: rgb(83, 51, 237)    
+}
+.login-content-href {
+    /* border: 1px solid rgb(209, 217, 228);
+    background-color: transparent;
+    color: rgb(10, 10, 10);
+    transition: border-color 0.25s ease 0s, color 0.25s ease 0s;
+    min-height: 36px; */
+}
+.slider{
+    left: 20% ;
+    position: absolute;
+  }
+.login-form .form{
+    border-radius: 24px;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    min-height: 100%;
+    overflow: auto;
+    padding: 1.333rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.form-heading {
+    
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+    
+}
+.form-heading h1{
+    font-family: Cabin ;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(10, 10, 10);
+}
+
+.nice-to-see{
+    color: rgb(90, 99, 114);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Inter, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.form-line  {
+  
+    width: 100%;
+    HEIGHT: 7PX;
+ 
+   background: radial-gradient(rgba(34, 36, 39, 0.16), rgb(255, 255, 255) 99.17%);
+   margin-bottom: 25px;
+   
+   
+}
+
+.form-input{
+   
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        width: 100%;
+        grid-column: span 2 / auto;
+    
+}
+.input-label{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+    font-family: Inter, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 4px;
+}
+
+.form-input-div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 12px;
+    border: 1px solid rgb(209, 217, 228);
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    color: rgb(143, 151, 163);
+    height: 30px;
+    
+}
+.form-input-div  input{
+
+        background: transparent;
+        color: rgb(10, 10, 10);
+        font-size: 12px;
+        font-weight: 400;
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    
+}
+.form-input-div:has(#email:focus){
+  /* outline: 2px solid rgb(83, 51, 237); Add a box shadow with color #5333ed */
+  box-shadow: rgba(83, 51, 237, 0.4) 0px 0px 0px 4px;
+   
+  }
+.form-input-div:has(#password:focus){
+  /* outline: 2px solid rgb(83, 51, 237); Add a box shadow with color #5333ed */
+  box-shadow: rgba(83, 51, 237, 0.4) 0px 0px 0px 4px;
+   
+  }
+  
+  .form-error {
+    color: rgb(228, 60, 60);
+    font-size:10px;
+    font-weight: 400;
+    font-family: Inter, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 8px;
+    text-wrap: balance;
+    /* visibility: hidden; */
+}
+#password-div{
+    margin-top: 7px;
+}
+
+.password-eye {
+    color: rgb(90, 99, 114);
+    display: flex;
+    height: 20px;
+    width: 20px;
+}
+.password-eye  > span  {
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    outline: none;
+}
+svg.usr-auth-app-emotion-cache-75lkxn {
+    outline: none;
+    cursor: pointer;
+}
+.forgot-password-div{
+    width: 100%;
+}
+.forgot-password{
+    font-size: 11px;
+    display: inline-flex;
+    color:rgb(83, 51, 237);
+}
+.forgot-password:hover {
+    color: rgb(83, 51, 237);
+    text-decoration: underline;
+}
+.form-btn{
+    
+        border: none;
+        color: rgb(255, 255, 255);
+        background: rgb(51, 106, 237);
+        width: 100%;
+        padding: 4px 24px;
+        font-size: 13px;
+        font-family: Cabin;
+        font-weight: 500;
+        border-radius: 12px;
+        margin-top: 10px;
+        transition:  all 0.25s ease 0s;
+        /* height: 36px; */
+
+        
+    
+}
+.form-btn:hover{
+    background: linear-gradient(99deg, rgb(51, 106, 237) 0%, rgb(83, 51, 237) 50%, rgb(83, 51, 237) 100%);
+    box-shadow: rgba(83, 51, 237, 0.32) 0px 4px 8px 0px;
+}
+.form-footer{
+
+    color: rgb(90, 99, 114);
+    text-align: justify;
+    font-size: 9px;
+    padding-top: 20px;
+ 
+}
+.form-footer a {
+    color: rgb(90, 99, 114);
+    font-size: 9px;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.form-hero{
+    margin-top: auto;   
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding:  10px 5px;
+    
+}
+.system-status{
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        font-size: 9px;
+ }
+ .system-status a {
+     font-family: Inter, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+     color: rgb(10, 10, 10);
+     font-weight: 500;
+     font-size: 11px;
+     text-decoration: none;
+     outline: 0px;
+     margin-left: 4px;
+     margin-top: 1px;
+    }
+.system-status a:hover {
+    text-decoration: underline;
+}
+.system-status svg {
+    vertical-align: -0.125em;
+    width: 1em;
+    height: 1em;
+    animation: auto ease 0s 1 normal none running none;
+    color: rgb(255, 150, 31);
+}
+
+@media (max-width: 1000px) {
+    .form-line {
+        height: 2px;
+    }
+    .login-content{
+        flex-basis: 100%;
+        margin: auto;
+        /* order: 2; */
+    }
+    .form {
+        margin: auto;
+    }
+    .login-form {
+        
+        flex-basis: 100%;
+        max-width: 550px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    h3.login-content-h3 {
+        font-size: 14px;
+    }
+    .login-content-p{
+        font-size: 11px;
+    }
+    .login-content{
+        max-width: 450px;
+        order: 2;
+        overflow-y: hidden;
+    }
+    .login-page{
+        background-size:150% 150%;
+        background-repeat: no-repeat;
+        background-position: center end;
+    }
+    .form-heading h1 {
+
+        font-size: 30px;
+    
+    }
+    .form-footer {
+     
+        font-size: 9px;
+    }
+    
+.slider {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+}
+}
+
+@media (max-width: 600px) {
+    .form-heading h1 {
+
+        font-size: 23px;
+    
+    }
+}
+
+
+button.slider-button {
+    height: 7px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.50) 50%, rgba(255, 255, 255, 0.8) 50%) right center / 200%;
+    width: 8px;
+    margin-left: 2px;
+    padding: 0px;
+    border-radius: 5px;
+    /* border: 0.5px solid rgba(255, 255, 255, 0.8); */
+}
+button.slider-button.active{
+    width: 30px;
+    transition: linear 1s;
+}
+
+
+/* Define a CSS animation named 'slideFromTop' */
+@keyframes slideFromTop {
+    from {
+      transform: translateY(200px); /* Start at -200px on the Y-axis */
+    }
+    to {
+      transform: translateY(0); /* End at 0px on the Y-axis */
+    }
+  }
+  
+  /* Apply the animation to the .login-content-p.active element */
+  .login-content-p.active,
+  .login-content-h3.active {
+    animation: slideFromTop 1.5s ease-in-out; /* Adjust duration and timing function as needed */
+  }
+  
+  /* Add a transition to create a smooth effect when changing the 'transform' property */
+  .login-content-p,
+  .login-content-h3
+   {
+    transition: transform 2s ease-in-out; /* Adjust duration and timing function as needed */
+  }
+  
+  /* Ensure the transform is initially set to 0px for non-active elements */
+  .login-content-p:not(.active),
+  .login-content-h3:not(.active) {
+    transform: translateY(0);
+  }
+  .login-content div {
+    overflow-y: hidden;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
