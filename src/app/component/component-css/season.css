@@ -1,0 +1,155 @@
+.season-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+.season-heading h2, 
+.season-heading a{
+    margin: 2px;
+ }
+ span.season-plus-icon {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.season-table{
+    width: 100%;
+}
+
+.season-thead tr th,
+.season-tbody tr td{
+    padding: 5px;
+    text-align: left;
+}
+.season-thead tr th{
+    padding-bottom: 20PX;
+}
+.season-tbody tr td{
+    font-size: 14px;
+}
+
+#season-tr{
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.odd-row{
+    background-color: #f2f4f9 !important;
+}
+
+.form-input-div INPUT {
+    WIDTH: 300PX;
+    OUTLINE: NONE;
+    BORDER: 1PX SOLID;
+    PADDING: 5PX;
+    padding-left: 15PX;
+    BORDER-RADIUS: 25PX;
+}
+label.input-label {
+    margin-left: 5px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.form-input-error {
+    font-size: 14px;
+    padding: 12px;
+    padding-top: 5px;
+    color: red;
+    min-height: 37px;
+}
+
+.date-fields {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-input.status-checkbox {
+    padding-left: 18px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+button.form-btn {
+    width: 300px;
+    margin-top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 4px 6px #444);
+}
+input[name="status"] {
+    width: 20px;
+    height: 20px;
+    display: none;
+ 
+}
+
+
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 20px;
+    width: 20px;
+     padding: 5px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .checkbox:checked ~ .checkmark {
+    background-color: #000;
+    border-radius: 2px;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox:checked ~ .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
