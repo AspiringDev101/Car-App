@@ -1,29 +1,14 @@
-"use client"
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+
 import DashboardHead from "./component/dashboardHead"
+import SideBar from "./component/sideBar"
 import Link from 'next/link';
 const Home = () => {
-  const router = useRouter();
-
-  // Use the useEffect hook to perform the redirect when the component mounts
-  useEffect(() => {
-    // Redirect to the home page (replace '/' with the desired URL)
-    router.push('/dashboard');
-  }, []); // The empty dependency array ensures the effect runs only once when the component mounts
 
   return (
     <div className='home-wrapper'>
     		<DashboardHead />
         	<div className="main-dashboard">
-    		 		<div className="sidebar">
-      			<div className="sidebar-item">
-				  <div className="side-item active dashboard"><Link href='/Dashboard'> Dashboard</Link></div>
-
-				  <div className="side-item menu-item-3"><Link href='/season'> item 3</Link></div>
-      			<div className="side-item menu-item-3"><Link href='/season'>Season</Link></div>
-      			</div>
-    		</div>
+    		 		<SideBar />
     		<div className="dashboard-content-area">
       			<div className="notification-example">
         		  <b className="notification-example1">Notification example</b>

@@ -5,7 +5,7 @@ export default async (req, res) => {
     
     try {
         if(req.method == 'GET'){
-        const query = 'Select * from Season';
+        const query = 'SELECT * FROM season ORDER BY SeasonID DESC';
         await connection.query(
             query,
            (error,result)=>{

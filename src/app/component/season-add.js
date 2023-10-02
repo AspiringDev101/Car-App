@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 import './component-css/season.css'
 import SeasonService from '../services/season.service'
 
-const SeasonAdd =  () => {
+const SeasonAddComponent =  () => {
     const validationSchema = Yup.object().shape({
         seasonName: Yup.string().required('season is required'),
         startingDate: Yup.string().required('starting Date is required.'),
@@ -25,7 +25,7 @@ const SeasonAdd =  () => {
         }
         SeasonService.insertData(data).then((res)=>{
             resetForm()
-            // document.getElementById('season-Link').click()
+           document.getElementById('season-Link').click()
             let list =  SeasonService.getAll();
             console.log(list)
 
@@ -111,9 +111,14 @@ const SeasonAdd =  () => {
           </button>
         </Form>
       </Formik>
-      <Link href={'http://localhost:3000/season'} id='season-Link'></Link>
+      <Link 
+        href={'http://localhost:3000/season/list'} 
+        target='_SELF' 
+        id='season-Link'
+        >
+        </Link>
             </div>
         </div>
     );
 }
-export default SeasonAdd;
+export default SeasonAddComponent;

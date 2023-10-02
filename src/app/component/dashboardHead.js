@@ -14,7 +14,7 @@ const DashboardHead = () => {
 <Image src={IconBusiness}  />
       <b className="business-name">Business Name</b>
       </div>
-              <b className="account">Account</b>
+              <b className="account"><Link href={'/login'}>Account </Link></b>
         </div>
         </div>
   </div>
