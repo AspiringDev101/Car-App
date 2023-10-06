@@ -153,3 +153,12 @@ input[name="status"] {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  .feather-edit{
+      margin: auto;
+      color: #333;
+    }
+    
+  .feather-edit:hover{
+    color: #000;
+    }
