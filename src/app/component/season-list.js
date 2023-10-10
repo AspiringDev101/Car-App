@@ -48,7 +48,7 @@ const SeasonList = async ({data}) => {
             <td>{formatDate(item.EndingDate)}</td>
             <td>{ `${item.Margin}% ` }</td>
             <td>{item.Status  == 1? 'Active': 'InActive'}</td>
-            <td>{<Link href={`/season/edit/${item.SeasonID}`}><FiEdit  className='feather-edit'/></Link>}</td>
+            <td>{<Link href={`/seasons/edit/${item.SeasonID}`}><FiEdit  className='feather-edit'/></Link>}</td>
           </tr>
         ))} 
       </tbody>
