@@ -1,5 +1,5 @@
 
-import connection from "../config/db";
+import connection from "../../config/db";
 
 export default async (req, res) => {
     

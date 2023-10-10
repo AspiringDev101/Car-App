@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import './component-css/season.css'
 import { format, parseISO } from 'date-fns';
-
+import { FiEdit } from 'react-icons/fi';
 
 
 function formatDate(dateString) {
@@ -36,6 +36,7 @@ const SeasonList = async ({data}) => {
           <th>Ending Date</th>
           <th>Margin</th>
           <th>Status</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody className='season-tbody'>
@@ -47,6 +48,7 @@ const SeasonList = async ({data}) => {
             <td>{formatDate(item.EndingDate)}</td>
             <td>{ `${item.Margin}% ` }</td>
             <td>{item.Status  == 1? 'Active': 'InActive'}</td>
+            <td>{<Link href={`/season/edit/${item.SeasonID}`}><FiEdit  className='feather-edit'/></Link>}</td>
           </tr>
         ))} 
       </tbody>
