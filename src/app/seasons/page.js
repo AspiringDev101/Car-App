@@ -5,7 +5,7 @@ import SideBar from '../component/sideBar';
 import SeasonList from '../component/season-list'
 import SeasonService from "../services/season.service"
 
-export default async function Season () {
+export default async function Seasons () {
 	const getSeasonList = async () => {
 		try {
 		  let data = await SeasonService.getAll();

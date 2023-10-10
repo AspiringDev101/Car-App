@@ -112,7 +112,7 @@ const SeasonAddComponent =  () => {
         </Form>
       </Formik>
       <Link 
-        href={'http://localhost:3000/season/list'} 
+        href={'http://localhost:3000/seasons/list'} 
         target='_SELF' 
         id='season-Link'
         >

@@ -25,7 +25,7 @@ const SeasonList = async ({data}) => {
         <div className='season-wrapper'>
             <div className='season-heading'>
                 <h2>Car Seasons</h2>
-                <Link href={'/season/add'}>Add New <span className='season-plus-icon'> +</span></Link>
+                <Link href={'/seasons/add'}>Add New <span className='season-plus-icon'> +</span></Link>
             </div>
             <div className='dashboard-content-box'>
             <table className='season-table'>

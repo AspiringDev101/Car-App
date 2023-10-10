@@ -5,7 +5,7 @@ const SideBar = () => {
 	const menuItems = [
 		
 		// { label: "Season / Add", href: "/season/add" },
-		{ label: "Season", href: "/season/list" },
+		{ label: "Seasons", href: "/seasons/list" },
 	  ];
     return (
         <div className="sidebar">
