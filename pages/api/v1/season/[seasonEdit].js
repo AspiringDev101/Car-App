@@ -4,7 +4,7 @@ import connection from "../../config/db";
 const   SeasonAdd  = async (req, res)  => {
     try {
             console.log(req.query)        
-           const query = `Select * From Season Where SeasonID = ${req.query.seasonEdit}`;
+           const query = `Select * From Seasons Where SeasonID = ${req.query.seasonEdit}`;
                        console.log(query)
                        await connection.query(
                         query,
