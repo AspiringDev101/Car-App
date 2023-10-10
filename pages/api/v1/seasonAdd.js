@@ -4,7 +4,7 @@ import connection from "../config/db";
 const   SeasonAdd  = async (req, res)  => {
     try {
            const query = `
-            INSERT INTO Season
+            INSERT INTO Seasons
                        (SeasonName
                        ,StartingDate
                        ,EndingDate

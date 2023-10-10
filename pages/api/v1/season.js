@@ -5,7 +5,7 @@ export default async (req, res) => {
     
     try {
         if(req.method == 'GET'){
-        const query = 'SELECT * FROM season ORDER BY SeasonID DESC';
+        const query = 'SELECT * FROM seasons ORDER BY SeasonID DESC';
         await connection.query(
             query,
            (error,result)=>{
@@ -15,7 +15,7 @@ export default async (req, res) => {
         })
         }else if(req.method == 'POST'){
             const query = `
-            INSERT INTO [dbo].[Season]
+            INSERT INTO [dbo].[Seasons]
                        ([SeasonName]
                        ,[StartingDate]
                        ,[EndingDate]
