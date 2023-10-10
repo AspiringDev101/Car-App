@@ -1,21 +1,18 @@
 
-import connection from "../config/db";
+import connection from "../../config/db";
 
 const   SeasonAdd  = async (req, res)  => {
     try {
            const query = `
-            INSERT INTO Season
-                       (SeasonName
-                       ,StartingDate
-                       ,EndingDate
-                       ,Margin
-                       ,Status)
-                 VALUES
-                       ('${req.body.SeasonName}'
-                       ,'${req.body.StartingDate}'
-                       ,'${req.body.EndingDate}'
-                       ,${req.body.Margin}
-                       ,${req.body.Status})`;
+           UPDATE Season
+           SET 
+               SeasonName = '${req.body.SeasonName}',
+               StartingDate = '${req.body.StartingDate}',
+               EndingDate = '${req.body.EndingDate}',
+               Margin = ${req.body.Margin},
+               Status = ${req.body.Status}
+           WHERE
+               SeasonID = ${req.body.SeasonID}`;
                        console.log(query)
                        await connection.query(
                         query,

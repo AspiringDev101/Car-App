@@ -155,6 +155,7 @@ body {
   min-height: 198px;
   padding: 20px;
   padding-bottom: 30px;
+  overflow-x: auto;
 }
 .basic-details{
   font-size: 18px;
